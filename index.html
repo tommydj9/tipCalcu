@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="eiffel-tower-clip-art-transparent-20 (1).png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" type="text/css" />
@@ -16,6 +17,7 @@
   <body>
     <div class="wrapper">
       <div class="container" id="topContainer">
+        <h1>Tip Calculator</h1>
         <div class="title">Bill total</div>
         <div class="inputContainer">
           <span>$</span>
@@ -44,21 +46,28 @@
           <div class="title">People</div>
           <div class="controls">
             <span class="buttonContainer">
-              <button class="splitButton" onclick="increasePeople()">
-                <span class="buttonText">+</span>
+              <button class="splitButton" onclick="decreasePeople()">
+                <span class="buttonText">-</span>
               </button>
             </span>
             <span class="splitAmount" id="numberOfPeople">1</span>
             <span class="buttonContainer">
-              <button class="splitButton" onclick="decreasePeople()">
-                <span class="buttonText">-</span>
+              <button class="splitButton" onclick="increasePeople()">
+                <span class="buttonText">+</span>
               </button>
             </span>
           </div>
         </div>
         <div class="totalContainer">
+          <div class="title">Total tip</div>
+          <div class="total" id="tip">$0.00</div>
+
+          <br>
+          <br>
+
           <div class="title">Total per Person</div>
           <div class="total" id="perPersonTotal">$0.00</div>
+
         </div>
       </div>
     </div>
